@@ -1,0 +1,211 @@
+<!DOCTYPE html> <!-- This identifies the file as a HTML file -->
+
+<html lang="en"> <!-- This is helps the web domains know that content is in english which is key for user interaction -->
+
+<head> <!-- This is the brain section of the Website. It holds my styles and defines my sections e.g Header and Footer -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- This is a settin that helps the webpage adjust to user device e. screen size-->
+    <title>My Portfolio Website</title> <!-- This is the name that appears on web servers to identify the website -->
+
+
+          <style> /* These are CSS styles used in the Website */
+
+            /* General Page Styling */
+            body {
+              font-family: 'Segoe UI', 'Helvetica Neue', 'Arial', sans-serif;
+              font-size: 16px;
+              line-height: 1.6;
+              color: #333333; 
+              background-color: #FFFFFF;
+              max-width: 960px;
+              margin: 0;
+              padding: 20px;
+            }
+
+            /* Header Styling */
+            header{
+                background-color: #4682B4	;
+                color: #4682B4;
+                padding: 40px 20px;
+                text-align: center;
+            }
+            h1, nav {
+              color: #8A2BE2; /* softer purple */
+              margin-bottom: 0.5em;
+            }
+
+           h2, h3, h4 {
+              color: #6A5ACD; /* softer purple */
+              margin-bottom: 0.5em;
+            }
+            header h1 {
+               margin: 0;
+               font-size: 2.5em; 
+            }
+
+            header nav {
+               font-size: 1.2em;
+               margin-top: 10px;  
+            }
+
+             section{
+                margin-bottom: 40px;
+            }
+
+            h2{
+                font-size: 1.8em;
+                margin-bottom: 10px;
+            }
+            section {
+               padding: 20px;
+               margin: 10px 0;
+               border-radius: 15px;
+               transition: background-color 0.5s ease;
+            }
+
+            /* Highlights the active section */
+            section:target {
+                background-color: #eac9e6;
+                border-left: 5px solid #af93d8;
+            }
+
+            p{
+                font-size: 1.1em;
+                line-height: 1.6;
+            }
+
+            ol{
+                list-style-type: circle;
+                padding-left: 20px;
+            }
+
+            li{
+                margin-bottom: 8px;
+            }
+
+            /* Footer Styling */
+            footer {
+                background-color: #5F9EA0;
+                color:#8A2BE2;
+                text-align: center;
+                padding: 20px;
+                position: relative;
+                bottom: 0;
+                width: 100%;
+            }
+
+            .about-content {
+                display: flex;
+                align-items: center;
+                gap: 20px; /* space between text and image */
+                flex-wrap: wrap; /* allows stacking on smaller screens */
+                }
+
+            .about-text {
+                flex: 1;
+                min-width:25px;
+            }
+
+            .about-image img {
+                max-width: 300px;
+                height: auto;
+                border-radius: 10px;
+            }
+   
+        </style>
+
+</head>
+
+
+<body>
+    <header>
+
+
+      <h1>Welcome To My Little Corner Of The World!</h1> <!-- This is text that appears on my website header. It's the largest and boldest text in the website-->
+
+        <nav> <!-- This helps user navigate through the website using the section heads iven in the header -->
+            <a href="#About">First Encounter</a> |
+            <a href="#EducationalBackground">School Stuff</a> |
+            <a href="#Interests">What I like</a> |
+            <a href="#Projects">What I've done</a> |
+            <a href="#Contacts">Let's talk</a>
+        </nav>
+      </header>
+
+    <section id="About">
+      <h2>Who am I?</h2>
+        <div class="about-content"> <!-- This helps me group my content for editing purposes; putting my imae beside the text -->
+          <div class="about-text"> <!-- This is a sub group of my classified content -->
+            <p>Hey, my name is Sandra Barasa. I am a 21 year old undergraduate <br>
+            student at the University of Nairobi. I'm currently studying Mechanical<br>
+            and Manufacturing Engineering. I'm curious about exploring the tech world <br>
+            so that I can integrate it with my course of interest. I'm also just a girl<br>
+            who's always wanted to make her own website</p>
+          </div>
+
+          <div class="about-image">
+            <img src="My_Photo.jpg" alt="A picture of me"> <!-- Link to image -->
+          </div>
+        </div>
+    </section>
+
+    <section id="EducationalBackground">
+      <h2>My Educational Journey</h2>
+        <p>Well since I am fairly young, my academic journey hasn't been that long<br></p>
+            <ol>
+                <li>Kindergarten & Lower Primary - <a href="https://harvestview.co.ke/" target="_blank">Harvest View Academy</a></li>
+                <li>Upper Primary - <a href="https://highpeakschools.sc.ke/" target="_blank">High Peak Junior Academy</a></li>
+                <li>Secondary and A Level - <a href="https://lis.sc.ke/lis-nairobi/" target="_blank">Light International School</a></li>
+                <li>Undergraduate - <a href="https://www.uonbi.ac.ke/" target="_blank">The University of Nairobi</a></li>
+            </ol>
+        <p>For more details you can look through my CV attached below<br>
+          <a href="files/CV.pdf" download> Here's My CV</a>
+        </p>
+    </section>
+
+    <section id="Interests">
+      <h2>Sooo, let's explore things I actually like</h2>
+        <p>Learning : I love discovering information about anything and everything.
+           I can say that I am an active learner. Be it from biology, to I am open
+           to it all. It makes me appreciate the world more, notice and understand
+           systems, mentalities and behaviours. </p>
+
+        <p>Creative Arts : I'm a theatre girl... I love the stage, the lights, the 
+           acting, singing, dancing, costumes. The drama of it all. I started acting 
+           and dancing in church. Typical, I knoooowww. I got to do more of this
+           through primary school and highschool. Fun fact: I even got to Churchill 
+           Show and State House through Music Festivals</p> 
+    </section>
+
+    <section id="Projects">
+      <h2>What has Sandra been up to?</h2>
+        <p>As an Engineering Student my projects have been in CAD softwares. I have worked with Inventor and SolidWorks</p>
+            <ol> 
+              <li><h4>Exam Project</h4></li>
+                 <p>This is the first fairly detailed designed I did. It was for my 2.2 Semester
+                  It involved understanding the structure of a component using its orthographic
+                  drawings then creating a 3D structure of it. It was a project that took 3 hours
+                  to complete. I was working with my classmate.</p>
+
+              <li><h4>FSAE Project</h4></li>
+                 <p>This is what I am currently working on. It's for motorsport competition. We are to
+                 create a working Formula 1 car that will compete against others internationally. My
+                 task is to design a driver template based on our driver's dimensions and position him
+                 based on the seat requirement rules.</p>
+            </ol>
+    </section>
+
+    <section id="Contacts">
+      <h2>Want To Talk More?</h2>
+        <p>If you'd like to reach out for any questions or advice please free to interact with the contact details given in the footer.</p>
+    </section>
+
+    <footer>
+        <p>To reach out to me, you can use any of the following</p>
+        <p>Phone Number: 0718470425</p>
+        <p>Email Address: <a href="mailto:nala04@students.uonbi.ac.ke">nala04@students.uonbi.ac.ke</a></p>
+    </footer>
+
+</body>
+</html>
