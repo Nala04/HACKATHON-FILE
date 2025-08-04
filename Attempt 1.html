@@ -198,7 +198,31 @@
 
     <section id="Contacts">
       <h2>Want To Talk More?</h2>
-        <p>If you'd like to reach out for any questions or advice please free to interact with the contact details given in the footer.</p>
+      <p>If you'd like to reach out for any questions or advice please feel free to key in your details and enquiry  and I'll be sure to get back to you.</p>
+      <h2>Forms</h2>
+        <form action="location" method="how" enctype="multipart/form-data">
+            <label for="name">Name:</label>
+            <input type="name" name="name" id="name">
+                <br><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+                <br><br>
+            <label for="profile">Profile Picture:</label>
+            <input type="file" name="profile" id="profile">
+                <br><br>
+            <label for="bio">Bio:</label>
+            <textarea type="bio" rows="2" cols="25"></textarea>
+                <br><br>
+            <label for="country">Country:</label>
+            <select name="country" id="country">
+                <option value="">--Select Country--</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Uganda">Uganda</option>
+                <option value="Tanzania">Tanzania</option>
+            </select>    
+                <br><br>
+            <input type="submit" value="Submit">
+        </form>
     </section>
 
     <footer>
